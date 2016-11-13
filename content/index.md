@@ -1,7 +1,9 @@
-title: 'Minimal Blitz Template'
+title: 'Blitz Static Site Generator'
+description: 'Blitz is a dead simple yet powerful static site generator using Node, Pug and bits of YAML here and there.'
 ---
-# Welcome!
+# Hello there!
 
-This template has only the bare minimum required for Blitz to function. I had to refrain from using a lot of Blitz's
-cool features for this template, so here you won't see pagination, menus, **Back** buttons or anything of the sort. To 
-find out more about them, head to [Blitz's website](https://hosting.kawaiidesu.me/blitz/).
+## I know you're here for Blitz documentation, but...
+
+...I am still in the middle of writing up the contents for this website. Meanwhile, checkout [my blog](https://foxypanda.me)
+or [Blitz GitHub page](https://github.com/TimboKZ/blitz).
