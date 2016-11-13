@@ -1,0 +1,12 @@
+extends layouts/main-layout
+
+block content
+    .section
+        .container
+            != content
+    .section
+        .container
+            each changelog in changelogs.reverse()
+                .card-panel
+                    h3= 'Version ' + changelog.version
+                    p!= changelog.content

@@ -5,18 +5,16 @@
             a.button-collapse(href='#', data-activates='mobile-demo')
                 i.material-icons menu
             ul.right.hide-on-med-and-down
-                li
+                li(class=(url('index') === url() ? 'active' : ''))
                     a(href=url('index'))!= '<i class="material-icons left">info_outline</i> Home'
-                li
+                li(class=(url('docs') === url() ? 'active' : ''))
                     a(href=url('docs'))!= '<i class="material-icons left">library_books</i> Documentation'
-                li
+                li(class=(url('changelog') === url() ? 'active' : ''))
                     a(href=url('changelog'))!= '<i class="material-icons left">view_list</i> Changelog'
-            ul#mobile-demo.side-nav
-                li
-                    a(href='sass.html') Sass
-                li
-                    a(href='badges.html') Components
-                li
-                    a(href='collapsible.html') Javascript
-                li
-                    a(href='mobile.html') Mobile
+            ul.side-nav
+                li(class=(url('index') === url() ? 'active' : ''))
+                    a(href=url('index'))!= '<i class="material-icons left">info_outline</i> Home'
+                li(class=(url('docs') === url() ? 'active' : ''))
+                    a(href=url('docs'))!= '<i class="material-icons left">library_books</i> Documentation'
+                li(class=(url('changelog') === url() ? 'active' : ''))
+                    a(href=url('changelog'))!= '<i class="material-icons left">view_list</i> Changelog'

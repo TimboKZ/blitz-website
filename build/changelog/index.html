@@ -1,36 +1,51 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="/blitz/assets/materialize/css/materialize.min.css" media="screen,projection"><link rel="stylesheet" href="/blitz/assets/prism/prism.css"><link rel="stylesheet" href="/blitz/assets/css/style.css?1GJYqTeVQXyW"><meta name="description" content="Blitz is a dead simple yet powerful static site generator using Node, Pug and bits of YAML here and there."><title>Blitz Static Site Generator</title></head><body><div class="navbar-fixed"><nav class="indigo darken-2" role="navigation"><div class="nav-wrapper container"><a class="brand-logo" href="/blitz">Blitz</a><a class="button-collapse" href="#" data-activates="mobile-demo"><i class="material-icons">menu</i></a><ul class="right hide-on-med-and-down"><li><a href="/blitz"><i class="material-icons left">info_outline</i> Home</a></li><li><a href="/blitz/docs"><i class="material-icons left">library_books</i> Documentation</a></li><li><a href="/blitz/changelog"><i class="material-icons left">view_list</i> Changelog</a></li></ul><ul class="side-nav" id="mobile-demo"><li><a href="sass.html">Sass</a></li><li><a href="badges.html">Components</a></li><li><a href="collapsible.html">Javascript</a></li><li><a href="mobile.html">Mobile</a></li></ul></div></nav></div><div class="section no-pad-bot"><div class="container"><br><br><br><div class="center"><img class="responsive-img center" src="/blitz/assets/img/blitz.png" alt="Blitz Static Site Generator"></div><br><div class="row center"><h5 class="header col s12 light">Dead simple static site generator running on Node.</h5></div><div class="row center"><a class="btn-large waves-effect waves-light blue darken-2"><i class="material-icons left">grade</i> Quick Start</a>&nbsp;<a class="btn-large waves-effect waves-light indigo darken-2" href="/blitz/docs"><i class="material-icons left">library_books</i> Docs</a>&nbsp;<a class="btn-large waves-effect waves-light indigo darken-2" href="https://github.com/TimboKZ/blitz" target="blank"><i class="material-icons left">settings_ethernet</i> Source Code</a></div><br><br></div></div><div class="section"><div class="container"><div class="row"><div class="col push-m2 m8 s12 lead"><h2 id="what-is-blitz-">What is Blitz?</h2>
-<p>Blitz is a static site generator. This means it can combine the text you write with templates produced by you or
-someone else to generate HTML pages. Once the pages are generated, you can browse your site using any browser, online or
-offline.</p>
-<p>Blitz has a lot of built-in features such as menus, pagination, fetching content from directories, relative URLs to
-other pages (useful for offline websites) and much more! That said, Blitz can be very simple when it counts and setting
-up a single page website shouldn&#39;t take longer than a minute.</p>
-<h2 id="how-does-blitz-work-">How does Blitz work?</h2>
-<p>Blitz is a command line application that uses Node. To generate sites it relies on 3 main components:</p>
-<ul>
-<li>The main configuration file, <code>blitz.yml</code>. It contains everything Blitz needs to know about your website, including
-the description of pages. In minimal configuration, this is the only file Blitz needs.</li>
-<li>Page templates written using <a href="https://www.npmjs.com/package/pug">Pug</a> templating engine. These will suit as the
-skeleton of your website.</li>
-<li>Content files that will be used to populate the templates and generate the website.</li>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="/blitz/assets/materialize/css/materialize.min.css" media="screen,projection"><link rel="stylesheet" href="/blitz/assets/prism/prism.css"><link rel="stylesheet" href="/blitz/assets/css/style.css?5eT2uX2mZ0tD"><meta name="description" content="Blitz is a dead simple yet powerful static site generator using Node, Pug and bits of YAML here and there."><title>Changelog | Blitz</title></head><body><div class="navbar-fixed"><nav class="indigo darken-2" role="navigation"><div class="nav-wrapper container"><a class="brand-logo" href="/blitz">Blitz</a><a class="button-collapse" href="#" data-activates="mobile-demo"><i class="material-icons">menu</i></a><ul class="right hide-on-med-and-down"><li><a href="/blitz"><i class="material-icons left">info_outline</i> Home</a></li><li><a href="/blitz/docs"><i class="material-icons left">library_books</i> Documentation</a></li><li class="active"><a href="/blitz/changelog"><i class="material-icons left">view_list</i> Changelog</a></li></ul><ul class="side-nav"><li><a href="/blitz"><i class="material-icons left">info_outline</i> Home</a></li><li><a href="/blitz/docs"><i class="material-icons left">library_books</i> Documentation</a></li><li class="active"><a href="/blitz/changelog"><i class="material-icons left">view_list</i> Changelog</a></li></ul></div></nav></div><div class="page-content"><div class="section"><div class="container"><h1 id="changelog">Changelog</h1>
+<p>Version history of all Blitz releases. Keep in mind this is just a short summary of major changes in each release, for
+complete documentation refer to the apprioate page of this website.</p>
+</div></div><div class="section"><div class="container"><div class="card-panel"><h3>Version 0.1.0</h3><p><ul>
+<li><p>Added <code>hash</code> to Pug locals available on every page. It&#39;s generated randomly every time <code>blitz build</code> is run, and can
+be used to bypass browser&#39;s cache, like so:</p>
+<pre><code class="lang-jade">  link(rel=&#39;stylesheet&#39;, href=asset(&#39;style.css?&#39; + hash))
+  //- Will force browser to ignore cache and download the file again, result: 
+  //- &lt;link rel=&quot;stylesheet&quot; href=&quot;/assets/style.css?kNP2xjPl5Atk&quot;&gt;
+</code></pre>
+</li>
+<li><p>Added <code>url()</code> function to Pug locals. If called with no arguments, it returns the URL of the current page. Accepts
+page ID as the only argument, more about it below.</p>
+</li>
+<li>Added <code>index</code> page ID by default, available via <code>url(&#39;index&#39;)</code> in Pug. It points to the website root directory if
+<code>explicit_html_extensions</code> is set to false or to root <code>index.html</code> file otherwise. It&#39;s useful for Home/Index links.
+Keep in mind that index is produced regardless of whether the index page exists or not. <strong>This ID can be overwritten
+from the config.</strong></li>
+<li><p>Added page IDs to the config and the <code>url()</code> function to Pug locals. Now, you can specify an ID for a page and then
+reference it in your templates using <code>url(&lt;id&gt;)</code>. Consider the example below:</p>
+<pre><code class="lang-yaml">  # In the config:
+  pages:
+    # ...
+    - uri: &#39;/docs&#39;
+      id: &#39;docs&#39;
+      # ...
+</code></pre>
+<pre><code class="lang-jade">  //- Somewhere in your Pug template:
+  a(href=url(docs))= Link to documentation
+</code></pre>
+</li>
+<li><p>Made the <code>template</code> property of directories specified in <code>child_directories</code> optional. If it is not present, no files
+will be generated. This is useful if you just want to pass the content from all files in a directory without actually
+creating the pages.</p>
+</li>
 </ul>
-<h2 id="super-quick-start">Super quick start</h2>
-<p>Don&#39;t want to read the whole <a href="#">quick start guide</a>? No problems, here&#39;s how you can get started with Blitz right now —
-first, <a href="https://docs.npmjs.com/getting-started/installing-node">make sure you have Node and NPM installed</a>. Then run the
-following command in terminal to install Blitz:</p>
-<pre><code class="lang-bash">npm install -g blitz-ssg
-</code></pre>
-<p>Congratulations, you&#39;ve just installed Blitz! Now, you can create a new directory and initialise a minimal Blitz project
-inside it and build your first site:</p>
-<pre><code class="lang-bash">mkdir blitz-example
-cd blitz-example
-blitz init -t minimal
-blitz build
-</code></pre>
-<p>Now, if you open the newly created <code>build</code> directory you should see an <code>index.html</code> file, which you can open to view
-the website you&#39;ve just generated. You can find <code>index.md</code> in the <code>content</code> folder and change the contents inside to
-update the website. Don&#39;t forget to run <code>blitz build</code> once you&#39;re done.</p>
-<p> To see what else can be done, head to <a href="#">docs</a>. By the way, this website was also built using Blitz, so you might want
- to check out <a href="https://github.com/TimboKZ/blitz-website">its source code</a> to see how I acheived certain things.</p>
-</div></div></div></div><footer class="page-footer indigo darken-2"><div class="container"><div class="row"><div class="col l6 s12 footer-author"><h5 class="white-text">About the author</h5><p class="grey-text text-lighten-4"><img class="responsive-img circle" src="/blitz/assets/img/tim.jpg" alt="Timur Kuzhagaliyev, author of Blitz">Hello there, I'm Timur Kuzhagaliyev and I develop Blitz. I study Computer Science at UCL and love
-TypeScript + Node. Check out my<a href="https://github.com/TimboKZ" target="_blank"> GitHub </a>and<a href="https://foxypanda.me/" target="_blank"> my blog </a>for other project I'm working on!</p></div><div class="col l3 s12"><h5 class="white-text">Navigation</h5><ul><li><a class="indigo-text text-lighten-5" href="/blitz">Home</a></li><li><a class="indigo-text text-lighten-5" href="/blitz/docs">Documentation</a></li><li><a class="indigo-text text-lighten-5" href="/blitz/changelog">Changelog</a></li></ul></div><div class="col l3 s12"><h5 class="white-text">Useful links</h5><ul><li><a class="indigo-text text-lighten-5" href="/blitz/issues">Report issues with Blitz</a></li></ul></div></div></div><div class="footer-copyright"><div class="container center">Generated using<a class="blue-text text-lighten-3" href="https://github.com/TimboKZ/blitz" target="_blank"> Blitz</a></div></div></footer><script src="/blitz/assets/js/jquery.min.js"></script><script src="/blitz/assets/materialize/js/materialize.min.js"></script><script src="/blitz/assets/prism/prism.js"></script><script src="/blitz/assets/js/scripts.js?1GJYqTeVQXyW"></script><script>Prism.plugins.autoloader.languages_path = '/blitz/assets/prism/components/';</script></body></html>
+</p></div><div class="card-panel"><h3>Version 0.0.1</h3><p><ul>
+<li>Initial release</li>
+<li>Blitz config</li>
+<li>Root pages</li>
+<li>Child pages and directories</li>
+<li>Menu with active menu points</li>
+<li>Relative or absolute links supported</li>
+<li>Explicit HTML extensions or directories (useful for offline browsing)</li>
+<li>Project initialisation from a template</li>
+<li>Assets support</li>
+<li>Parent page support</li>
+<li>Global variable support</li>
+</ul>
+</p></div></div></div></div><footer class="page-footer indigo darken-2"><div class="container"><div class="row"><div class="col l6 s12 footer-author"><h5 class="white-text">About the author</h5><p class="grey-text text-lighten-4"><img class="responsive-img circle" src="/blitz/assets/img/tim.jpg" alt="Timur Kuzhagaliyev, author of Blitz">Hello there, I'm Timur Kuzhagaliyev and I develop Blitz. I study Computer Science at UCL and love
+TypeScript + Node. Check out my<a href="https://github.com/TimboKZ" target="_blank"> GitHub </a>and<a href="https://foxypanda.me/" target="_blank"> my blog </a>for other project I'm working on!</p></div><div class="col l3 s12"><h5 class="white-text">Navigation</h5><ul><li><a class="indigo-text text-lighten-5" href="/blitz">Home</a></li><li><a class="indigo-text text-lighten-5" href="/blitz/docs">Documentation</a></li><li><a class="indigo-text text-lighten-5" href="/blitz/changelog">Changelog</a></li></ul></div><div class="col l3 s12"><h5 class="white-text">Useful links</h5><ul><li><a class="indigo-text text-lighten-5" href="/blitz/issues">Report issues with Blitz</a></li><li><a class="indigo-text text-lighten-5" href="https://github.com/TimboKZ/blitz">Blitz source code</a></li><li><a class="indigo-text text-lighten-5" href="https://github.com/TimboKZ/blitz-website">Source code of this website</a></li></ul></div></div></div><div class="footer-copyright"><div class="container center">Generated using<a class="blue-text text-lighten-3" href="https://github.com/TimboKZ/blitz" target="_blank"> Blitz</a></div></div></footer><script src="/blitz/assets/js/jquery.min.js"></script><script src="/blitz/assets/materialize/js/materialize.min.js"></script><script src="/blitz/assets/prism/prism.js"></script><script src="/blitz/assets/js/scripts.js?5eT2uX2mZ0tD"></script><script>Prism.plugins.autoloader.languages_path = '/blitz/assets/prism/components/';</script></body></html>

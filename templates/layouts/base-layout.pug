@@ -8,7 +8,7 @@ html
         link(rel='stylesheet', href=asset('prism/prism.css'))
         link(rel='stylesheet', href=asset('css/style.css?' + hash))
         meta(name='description', content=description)
-        title= title
+        title= title ? title + ' | Blitz' : 'Blitz Static Site Generator'
     body
         block body
         script(src=asset('js/jquery.min.js'))

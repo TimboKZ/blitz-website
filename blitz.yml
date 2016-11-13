@@ -57,11 +57,14 @@ pages:
         title: 'Documentation'
   - uri: '/changelog'
     id: 'changelog'
-    content: 'index.md'
-    template: 'index.pug'
+    content: 'changelog.md'
+    template: 'changelog.pug'
     menus:
       - name: 'footerMain'
         title: 'Changelog'
+    child_directories:
+      - name: 'changelogs'
+        directory: 'changelog'
   - uri: '/issues'
     id: 'issues'
     content: 'index.md'

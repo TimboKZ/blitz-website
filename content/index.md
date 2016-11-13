@@ -1,4 +1,3 @@
-title: 'Blitz Static Site Generator'
 description: 'Blitz is a dead simple yet powerful static site generator using Node, Pug and bits of YAML here and there.'
 ---
 ## What is Blitz?
@@ -31,7 +30,7 @@ following command in terminal to install Blitz:
 npm install -g blitz-ssg
 ```
 
-Congratulations, you've just installed Blitz! Now, you can create a new directory and initialise a minimal Blitz project
+Congratulations, you've just installed Blitz! Now, you can create a new directory, initialise a minimal Blitz project
 inside it and build your first site:
 
 ```bash
