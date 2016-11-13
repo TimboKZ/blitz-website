@@ -1,0 +1,21 @@
+extends ../layouts/sidebar-layout
+
+block title
+    title= title + ' | v0.1 Documentation | Blitz'
+
+block full
+    br
+    .card-panel.blue.darken-2
+        .col.s12
+            a(href=url('docs') class='breadcrumb')= 'Documentation'
+            a(href=url('docs_0_1_overview') class='breadcrumb')= 'Version 0.1'
+            a(href=url() class='breadcrumb')= title
+
+block sidebar
+    .collection
+        each section in menus.docs_0_1_sections
+            a.collection-item(href=section.url class=(section.active ? 'blue darken-2 white-text' : 'blue-text'))
+                = section.title
+
+block content
+    != content

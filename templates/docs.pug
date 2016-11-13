@@ -1,0 +1,16 @@
+extends layouts/main-layout
+
+block content
+    .section
+        .container
+            != content
+    .section
+        .container
+            .row
+                - var newest = true;
+                each child in child_pages.reverse()
+                    a.white-text(href=child.url)
+                        .col.s12.m6.l4
+                            .card-panel.hoverable(class=(newest ? 'blue darken-2' : 'indigo darken-2'))
+                                h4= 'Version ' + child.version
+                    - newest = false

@@ -3,6 +3,10 @@
   max-width: 70px
   float: left
 
+.breadcrumb
+  &, &:before
+    vertical-align: middle !important
+
 .lead
   p, li
     font-size: 1.4rem
@@ -14,6 +18,15 @@
     list-style-type: disc !important
     list-style-position: outside
     padding: 0 0 0 6px
+  & > h1, & > h2, & > h3, & > h4, & > h5, & > h6
+    &:first-of-type
+      margin-top: 0
+  .card-panel
+    & > h1, & > h2, & > h3, & > h4, & > h5, & > h6
+      &:first-child
+        margin-top: 0
+        &:last-child
+          margin-bottom: 0
 
 *:not(pre) > code
   background-color: #f2f2f2

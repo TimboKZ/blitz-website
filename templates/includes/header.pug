@@ -2,7 +2,7 @@
     nav.indigo.darken-2(role='navigation')
         .nav-wrapper.container
             a.brand-logo(href=url('index')) Blitz
-            a.button-collapse(href='#', data-activates='mobile-demo')
+            a.button-collapse(href='#', data-activates='mobile-menu')
                 i.material-icons menu
             ul.right.hide-on-med-and-down
                 li(class=(url('index') === url() ? 'active' : ''))
@@ -11,10 +11,11 @@
                     a(href=url('docs'))!= '<i class="material-icons left">library_books</i> Documentation'
                 li(class=(url('changelog') === url() ? 'active' : ''))
                     a(href=url('changelog'))!= '<i class="material-icons left">view_list</i> Changelog'
-            ul.side-nav
-                li(class=(url('index') === url() ? 'active' : ''))
-                    a(href=url('index'))!= '<i class="material-icons left">info_outline</i> Home'
-                li(class=(url('docs') === url() ? 'active' : ''))
-                    a(href=url('docs'))!= '<i class="material-icons left">library_books</i> Documentation'
-                li(class=(url('changelog') === url() ? 'active' : ''))
-                    a(href=url('changelog'))!= '<i class="material-icons left">view_list</i> Changelog'
+
+ul#mobile-menu.side-nav
+    li(class=(url('index') === url() ? 'active' : ''))
+        a(href=url('index'))!= '<i class="material-icons left">info_outline</i> Home'
+    li(class=(url('docs') === url() ? 'active' : ''))
+        a(href=url('docs'))!= '<i class="material-icons left">library_books</i> Documentation'
+    li(class=(url('changelog') === url() ? 'active' : ''))
+        a(href=url('changelog'))!= '<i class="material-icons left">view_list</i> Changelog'

@@ -1,4 +1,5 @@
-description: 'Blitz is a dead simple yet powerful static site generator using Node, Pug and bits of YAML here and there.'
+description: |
+    Blitz is a dead simple yet powerful static site generator using Node, Pug and bits of YAML here and there.
 ---
 ## What is Blitz?
 

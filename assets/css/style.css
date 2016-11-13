@@ -3,6 +3,9 @@
   max-width: 70px;
   float: left; }
 
+.breadcrumb, .breadcrumb:before {
+  vertical-align: middle !important; }
+
 .lead p, .lead li {
   font-size: 1.4rem; }
 
@@ -12,6 +15,12 @@
   list-style-type: disc !important;
   list-style-position: outside;
   padding: 0 0 0 6px; }
+.page-content > h1:first-of-type, .page-content > h2:first-of-type, .page-content > h3:first-of-type, .page-content > h4:first-of-type, .page-content > h5:first-of-type, .page-content > h6:first-of-type {
+  margin-top: 0; }
+.page-content .card-panel > h1:first-child, .page-content .card-panel > h2:first-child, .page-content .card-panel > h3:first-child, .page-content .card-panel > h4:first-child, .page-content .card-panel > h5:first-child, .page-content .card-panel > h6:first-child {
+  margin-top: 0; }
+  .page-content .card-panel > h1:first-child:last-child, .page-content .card-panel > h2:first-child:last-child, .page-content .card-panel > h3:first-child:last-child, .page-content .card-panel > h4:first-child:last-child, .page-content .card-panel > h5:first-child:last-child, .page-content .card-panel > h6:first-child:last-child {
+    margin-bottom: 0; }
 
 *:not(pre) > code {
   background-color: #f2f2f2;
