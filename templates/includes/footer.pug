@@ -1,0 +1,29 @@
+footer.page-footer.indigo.darken-2
+    .container
+        .row
+            .col.l6.s12.footer-author
+                h5.white-text About the author
+                p.grey-text.text-lighten-4
+                    img.responsive-img.circle(src=asset('img/tim.jpg') alt='Timur Kuzhagaliyev, author of Blitz')
+                    | Hello there, I'm Timur Kuzhagaliyev and I develop Blitz. I study Computer Science at UCL and love
+                    | TypeScript + Node. Check out my
+                    a(href='https://github.com/TimboKZ' target='_blank')= ' GitHub '
+                    | and
+                    a(href='https://foxypanda.me/' target='_blank')= ' my blog '
+                    | for other project I'm working on!
+            .col.l3.s12
+                h5.white-text Navigation
+                ul
+                    each item in menus.footerMain
+                        li
+                            a.indigo-text.text-lighten-5(href=item.url)= item.title
+            .col.l3.s12
+                h5.white-text Useful links
+                ul
+                    each item in menus.footerSecondary
+                        li
+                            a.indigo-text.text-lighten-5(href=item.url)= item.title
+    .footer-copyright
+        .container.center
+            | Generated using
+            a.blue-text.text-lighten-3(href='https://github.com/TimboKZ/blitz' target='_blank')= ' Blitz'
