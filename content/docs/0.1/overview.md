@@ -15,6 +15,7 @@ v0.1 was the first stable release of Blitz and it introduced a lot of key featur
 * Markdown and YAML support for content creation. Blitz's content files have the `.md` extension but they are not your usual Markdown files. Read [Writing content] for more information about them.
 * Nested and duplicate pages. Using `blitz.yml`, you can nest as many pages as you own. Having duplicate pages isn't an issue either, a single page or template can be reused an infinite amount of times. Blitz caches as much data as possible, so duplicates shouldn't cause any significant performance impact either.
 * Pagination and loading content from a directory. 
+* Global menus that work offline and know what the current menu point is. In `config.yml` you can 
 
 ##### Known issues
 

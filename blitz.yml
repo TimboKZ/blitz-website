@@ -4,7 +4,7 @@
 #      Copyright (c) 2016 Timur Kuzhagaliyev                     #
 #                                                                #
 #      Source code:    https://github.com/TimboKZ/blitz          #
-#      Documentation:  https://hosting.kawaiidesu.me/blitz/      #
+#      Documentation:  https://getblitz.io/                      #
 #                                                                #
 ##################################################################
 
@@ -15,12 +15,12 @@ blitz_version: '0.1.0'
 # Site URL without a trailing slash. This is not used in URL
 # generation but is rather available for your own convenience.
 # This parameter is passed to every Pug page as `site_url`.
-site_url: 'https://hosting.kawaiidesu.me'
+site_url: 'https://getblitz.io'
 
 # Site root without a trailing slash. E.g. if the root of your
 # site is `http://test.org/hello/home/` set this to `hello/home`.
 # This parameter is passed to every Pug page as `site_root`.
-site_root: 'blitz'
+site_root: ''
 
 # Whether to use absolute URLs (`http://test.org/hello/`) or
 # relative URLs (`./hello/`). Disable this to browse the website
@@ -70,13 +70,13 @@ pages:
             template: 'docs/0.1.pug'
             menus:
               - name: 'docs_0_1_sections'
-          - name: 'getting_started_from_sctach'
-            content: 'docs/0.1/getting-started-from-scratch.md'
+          - name: 'getting_started_template'
+            content: 'docs/0.1/getting-started-template.md'
             template: 'docs/0.1.pug'
             menus:
               - name: 'docs_0_1_sections'
-          - name: 'getting_started_template'
-            content: 'docs/0.1/getting-started-template.md'
+          - name: 'getting_started_from_sctach'
+            content: 'docs/0.1/getting-started-from-scratch.md'
             template: 'docs/0.1.pug'
             menus:
               - name: 'docs_0_1_sections'
