@@ -70,8 +70,13 @@ pages:
             template: 'docs/0.1.pug'
             menus:
               - name: 'docs_0_1_sections'
-          - name: 'getting_started'
-            content: 'docs/0.1/getting-started.md'
+          - name: 'getting_started_from_sctach'
+            content: 'docs/0.1/getting-started-from-scratch.md'
+            template: 'docs/0.1.pug'
+            menus:
+              - name: 'docs_0_1_sections'
+          - name: 'getting_started_template'
+            content: 'docs/0.1/getting-started-template.md'
             template: 'docs/0.1.pug'
             menus:
               - name: 'docs_0_1_sections'
