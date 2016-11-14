@@ -43,5 +43,5 @@ Now, if you open the newly created `build` directory you should see an `index.ht
 the website you've just generated. You can find `index.md` in the `content` folder and change the contents inside to
 update the website. Don't forget to run `blitz build` once you're done.
  
- To see what else can be done, head to [docs](https://getblitz.io/docs/0.1/). By the way, this website was also built using Blitz, so you might want
+ To see what else can be done, head to the [docs](https://getblitz.io/docs/0.1/). By the way, this website was also built using Blitz, so you might want
  to check out [its source code](https://github.com/TimboKZ/blitz-website) to see how I acheieved certain things.
