@@ -6,6 +6,11 @@ body {
 main {
   flex: 1 0 auto; }
 
+#brand-logo img {
+  max-height: 21px;
+  height: auto;
+  width: auto; }
+
 .breadcrumb, .breadcrumb:before {
   vertical-align: middle !important; }
 

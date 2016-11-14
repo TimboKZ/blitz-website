@@ -10,7 +10,8 @@ header
     .navbar-fixed
         nav.indigo.darken-2(role='navigation')
             .nav-wrapper.container
-                a.brand-logo(href=url('index')) Blitz
+                a#brand-logo.brand-logo(href=url('index'))
+                    img(src=asset('img/blitz-logo-white-small.png') alt='Blitz Static Site Generator')
                 a.button-collapse(href='#', data-activates='mobile-menu')
                     i.material-icons menu
                 ul.right.hide-on-med-and-down
