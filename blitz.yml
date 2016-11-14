@@ -17,7 +17,7 @@ blitz_version: '0.1.0'
 # This parameter is passed to every Pug page as `site_url`.
 site_url: 'https://getblitz.io'
 
-# Site root without a trailing slash. E.g. if the root of your
+# Site root without surrounding slashes. E.g. if the root of your
 # site is `http://test.org/hello/home/` set this to `hello/home`.
 # This parameter is passed to every Pug page as `site_root`.
 site_root: ''

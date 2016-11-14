@@ -7,9 +7,19 @@ html
         link(rel='stylesheet', href=asset('materialize/css/materialize.min.css') media='screen,projection')
         link(rel='stylesheet', href=asset('prism/prism.css'))
         link(rel='stylesheet', href=asset('css/style.css?' + hash))
-        meta(name='description', content=description)
+        link(rel='icon', type='image/png' href=asset('img/favicon.png?' + hash))
+        meta(property='og:type', content='website')
+        meta(property='og:url', content=site_url + '/' + site_root)
+        meta(property='og:image', content=asset('img/blitz-icon.png'))
+
         block title
-            title= title ? title + ' | Blitz' : 'Blitz Static Site Generator'
+            - var title_string = title ? title + ' | Blitz' : 'Blitz Static Site Generator'
+            meta(property='og:title', content=title_string)
+            title= title_string
+
+        - var description_string = description ? description : 'Blitz is a dead simple yet powerful static site generator running on Node.js, Pug and bits of YAML here and there.'
+        meta(name='description', content=description_string)
+        meta(property='og:description', content=description_string)
     body
         block body
         script(src=asset('js/jquery.min.js'))
