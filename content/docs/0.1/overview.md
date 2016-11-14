@@ -25,4 +25,5 @@ v0.1 was the first stable release of Blitz and it introduced a lot of key featur
 
 * Live preview/reload. One of the features I think people might find useful is making a `blitz preview` command, that will boot up an HTML server and reload the pages in real time whenever a change is detected.
 * `blitz watch` command that will watch project files for changes and rebuild the website whenever a change is detected. Perforamnce is likely to suffer on big projects but for small one it should be quite feasible.
-* Add page numbers and separate pages to the current pagination engine. The idea is to allow you to specify the amount of records per page when retrieving data from a directory and then pass all page numbers with URLs to your templates. 
+* Add page numbers and separate pages to the current pagination engine. The idea is to allow you to specify the amount of records per page when retrieving data from a directory and then pass all page numbers with URLs to your templates.
+* Refine CLI workflow. At the moment it is not quite intuitive and is quite different from other similar applications, which can have a negative impact on user experience.

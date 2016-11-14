@@ -15,10 +15,10 @@ To install Blitz globally run the following command:
 npm install -g blitz-ssg
 ```
 
-If you didn't receive any errors from NPM, you've successfully installed Bltiz. You can check that it works by running the following command:
+If you didn't receive any errors from NPM, you've successfully installed Blitz. You can check that it works by running the following command:
 
 ```bash
-blitz
+blitz -h
 ```
 
 ##### Installing Blitz locally
@@ -29,7 +29,7 @@ Although it is recommended to install Blitz globally, local installation should 
 npm install --save blitz-ssg
 ```
 
-Keep in mind, this will **not** create a global command `blitz`, so to run Blitz you'll have to switch to the directory where `package.json` for your NPM project is located and run the following:
+Keep in mind, this will **not** create the global `blitz` command, so to run it you'll have to switch to the directory where `package.json` for your NPM project is located and run the following:
 
 ```bash
 node node_modules/blitz-ssg/blitz-cli
