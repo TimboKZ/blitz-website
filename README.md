@@ -15,3 +15,5 @@ cd blitz-website
 npm install -g blitz-ssg
 blitz build
 ```
+
+If you want to browse the website offline, don't forget to change `absolute_urls` to `false` and `explicit_html_extensions` to `true` before building the website.
