@@ -1,3 +1,4 @@
+---
 title: 'Changelog'
 description: |
     Summary of changes made throughout Blitz development.

@@ -1,4 +1,3 @@
----
 ## What is Blitz?
 
 Blitz is a static site generator. This means it can combine the text you write with templates produced by you or

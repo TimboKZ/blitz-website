@@ -1,3 +1,4 @@
+---
 title: 'Getting started with Blitz: Using a template'
 menu_title: 'Getting started from a template'
 ---
