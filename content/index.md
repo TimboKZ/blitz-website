@@ -10,13 +10,15 @@ up a single page website shouldn't take longer than a minute.
 
 ## How does Blitz work?
 
-Blitz is a command line application that uses Node. To generate sites it relies on 3 main components:
+Blitz is a command line application that uses Node.js. To generate static sites it relies on 3 main components:
 
 * The main configuration file, `blitz.yml`. It contains everything Blitz needs to know about your website, including
 the description of pages. In minimal configuration, this is the only file Blitz needs.
 * Page templates written using [Pug](https://www.npmjs.com/package/pug) templating engine. These will suit as the
 skeleton of your website.
 * Content files that will be used to populate the templates and generate the website.
+
+Once these are ready, Blitz uses the config to build pages, piping content into templates. The beauty of this approach is that you can reuse content files and templates as many times as you want! Additionally, [Pug](https://pugjs.org/), the templating engine used by Blitz, supports such amazing things as [layouts](https://pugjs.org/language/extends.html), [includes](https://pugjs.org/language/includes.html) and [mixins](https://pugjs.org/language/mixins.html).
 
 ## Super quick start
 
