@@ -7,6 +7,10 @@ version: '0.1.x'
 
 > This section is still being written up. Come back in a couple of days for complete documentation.
 
+##### Understanding Blitz
+
+The way Blitz works is really pretty simple. You have [Blitz content files](https://www.getblitz.io/docs/0.1/writing-content), which describes the contents of your website. Then, you have [Pug templates](https://www.getblitz.io/docs/0.1/making-templates) which describe how said contents should look. Finally, you have [the main config file](https://www.getblitz.io/docs/0.1/config), `blitz.yml` — it tells Blitz how to combine content files and templates to produce your static website. You can reuse both as much as you want, and even parse all content files in a directory!
+
 ##### Features
 
 v0.1 was the first stable release of Blitz and it introduced a lot of key features.

@@ -4,4 +4,4 @@ menu_title: 'Getting started from scratch'
 ---
 ## Getting started from scratch
 
-> This page is not yet completed.
+> This page has not yet been completed.

@@ -71,12 +71,28 @@ pages:
             menus:
               - name: 'docs_0_1_sections'
           - name: 'getting_started_template'
+            id: 'quick-start'
             content: 'docs/0.1/getting-started-template.md'
             template: 'docs/0.1.pug'
             menus:
               - name: 'docs_0_1_sections'
           - name: 'getting_started_from_sctach'
             content: 'docs/0.1/getting-started-from-scratch.md'
+            template: 'docs/0.1.pug'
+            menus:
+              - name: 'docs_0_1_sections'
+          - name: 'blitz_config'
+            content: 'docs/0.1/config.md'
+            template: 'docs/0.1.pug'
+            menus:
+              - name: 'docs_0_1_sections'
+          - name: 'writing_content'
+            content: 'docs/0.1/writing-content.md'
+            template: 'docs/0.1.pug'
+            menus:
+              - name: 'docs_0_1_sections'
+          - name: 'making_templates'
+            content: 'docs/0.1/making-templates.md'
             template: 'docs/0.1.pug'
             menus:
               - name: 'docs_0_1_sections'
