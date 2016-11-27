@@ -15,7 +15,7 @@ blitz_version: '0.1.4'
 # Site URL without a trailing slash. Added in front of every
 # absolute URL. If you want to have URLs that look like
 # `/index.html` instead of `http://localhost/index.html`
-# set this to an empty string, ''.
+# set this to an empty string, '', or remove it completely.
 # This parameter is passed to every Pug page as `site_url`.
 site_url: 'https://getblitz.io'
 

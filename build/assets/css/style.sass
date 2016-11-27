@@ -20,14 +20,22 @@ main
     font-size: 1.4rem
 
 .page-content
+  hr
+    border-color: #f0f0f0
+    border-style: solid
+    margin: 20px 0
   ul
     margin: 0 0 0 20px
   li
     list-style-type: disc !important
     list-style-position: outside
     padding: 0 0 0 6px
+  & > h1, & > h2, & > h3, & > h4
+    margin-top: 40px
+  & > h5, & > h6
+    margin-top: 20px
   & > h1, & > h2, & > h3, & > h4, & > h5, & > h6
-    &:first-of-type
+    &:first-child
       margin-top: 0
   .card-panel
     & > h1, & > h2, & > h3, & > h4, & > h5, & > h6

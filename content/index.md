@@ -30,13 +30,13 @@ following command in terminal to install Blitz:
 npm install -g blitz-ssg
 ```
 
-Congratulations, you've just installed Blitz! Now, you can create a new directory, initialise a minimal Blitz project
+Congratulations, you've just installed Blitz! Now, you can create a new directory, initialise a Blitz project
 inside it and build your first site:
 
 ```bash
 mkdir blitz-example
 cd blitz-example
-blitz init -t minimal
+blitz init -t portfolio
 blitz build
 ```
 

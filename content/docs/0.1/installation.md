@@ -35,3 +35,11 @@ Keep in mind, this will **not** create the global `blitz` command, so to run it 
 ```bash
 node node_modules/blitz-ssg/blitz-cli
 ```
+
+##### Updating Blitz
+
+To get the most recent version, just run this command again:
+
+```bash
+npm install -g blitz-ssg
+```

@@ -17,13 +17,21 @@ main {
 .lead p, .lead li {
   font-size: 1.4rem; }
 
+.page-content hr {
+  border-color: #f0f0f0;
+  border-style: solid;
+  margin: 20px 0; }
 .page-content ul {
   margin: 0 0 0 20px; }
 .page-content li {
   list-style-type: disc !important;
   list-style-position: outside;
   padding: 0 0 0 6px; }
-.page-content > h1:first-of-type, .page-content > h2:first-of-type, .page-content > h3:first-of-type, .page-content > h4:first-of-type, .page-content > h5:first-of-type, .page-content > h6:first-of-type {
+.page-content > h1, .page-content > h2, .page-content > h3, .page-content > h4 {
+  margin-top: 40px; }
+.page-content > h5, .page-content > h6 {
+  margin-top: 20px; }
+.page-content > h1:first-child, .page-content > h2:first-child, .page-content > h3:first-child, .page-content > h4:first-child, .page-content > h5:first-child, .page-content > h6:first-child {
   margin-top: 0; }
 .page-content .card-panel > h1:first-child, .page-content .card-panel > h2:first-child, .page-content .card-panel > h3:first-child, .page-content .card-panel > h4:first-child, .page-content .card-panel > h5:first-child, .page-content .card-panel > h6:first-child {
   margin-top: 0; }
