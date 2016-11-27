@@ -88,6 +88,11 @@ pages:
             template: 'docs/0.1.pug'
             menus:
               - name: 'docs_0_1_sections'
+          - name: 'adding_pages'
+            content: 'docs/0.1/pages.md'
+            template: 'docs/0.1.pug'
+            menus:
+              - name: 'docs_0_1_sections'
           - name: 'writing_content'
             content: 'docs/0.1/writing-content.md'
             template: 'docs/0.1.pug'

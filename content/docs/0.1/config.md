@@ -9,7 +9,7 @@ menu_title: 'Blitz config'
 This section will look at the structure of `blitz.yml` file used to describe your website. None of the parameters described below are necessary, and Blitz will use default values if some parameter isn't explicitly defined. You'll see something like that in your command line:
 
 ```bash
-[Blitz WARN] `blitz_version` is not defined: Using current Blitz version (`0.1.4`)
+[Blitz WARN] `blitz_version` is not defined: Using current Blitz version (`0.1.5`)
 [Blitz WARN] `site_url` is not defined: Using an empty string (``)
 ```
 
